@@ -1,0 +1,11 @@
+.heading {
+    border:2px solid black;
+    padding: 10px;
+    background-color: aqua;
+}
+.name-box {
+    padding-left: 50px;
+}
+ .img {
+    padding-left: 60px;
+ }

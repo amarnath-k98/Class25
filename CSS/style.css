@@ -1,0 +1,31 @@
+.cointainer {
+    border: 2px solid black;
+    margin: 10px;
+    width: 210px;
+    padding: 10px;
+    height: 100vh;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+.ak-para {
+    font-size: x-small;
+    padding: 10px;
+}
+.buy-btn {
+    background-color: black;
+    color: yellowgreen;
+
+}
+.later-btn {
+     background-color: black;
+    color: blueviolet;
+}
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
