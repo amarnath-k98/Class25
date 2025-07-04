@@ -1,4 +1,4 @@
-.heading {
+/* .heading {
     color:black;
     font-size: larger;
 }
@@ -47,4 +47,45 @@
     background-color: rgb(197, 23, 153);
     position: fixed;
     right: 0;
+} */
+
+
+
+.main-box{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+.box{
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    background-color: maroon;
+}
+@media (min-width:500px) and (max-width:700px){
+    .main-box{
+        background-color: aqua;
+        width: 500px;
+    }
+    .box{
+        background-color: blueviolet;
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (min-width:700px){
+    .main-box{
+        width: 600px;
+    }
+    .box{
+        width: 60px;
+        height: 60px;
+    }
 }
