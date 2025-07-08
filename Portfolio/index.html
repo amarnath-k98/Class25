@@ -1,22 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <div class="main">
-        <div class="navigator">
+        <div class="navigation">
             <ul>
-                <li><span class="isMobile"><img src="./Portfolio/asset/home.png" /></span><span>Home</span></li>
-                <li><span class="isMobile"><img src="./Portfolio/asset/skill.png" /></span><span>Skills</span></li>
-                <li><span class="isMobile"><img src="./Portfolio/asset/project.png" /></span><span>Projects</span></li>
-                <li><span class="isMobile"><img src="./Portfolio/asset/contact.png" /></span><span>Contact</span></li>
+                <a href="#home">
+                    <li><span class="isMobile"><img src="./asset/home.png" /></span><span>Home</span></li>
+                </a>
+                <a href="#skills">
+                    <li><span class="isMobile"><img src="./asset/skill.png" /></span><span>Skills</span></li>
+                </a>
+                <a href="#projects">
+                    <li><span class="isMobile"><img src="./asset/project.png" /></span><span>Projects</span></li>
+                </a>
+                <a href="#contact">
+                    <li><span class="isMobile"><img src="./asset/contact.png" /></span><span>Contact</span></li>
+                </a>
             </ul>
             <div class="all-section">
-                <div id="home" class="section">Home</div>
+                <div id="home" class="section home-layout">
+                    <div class="left-content">
+                        <div class="image-content h-c">
+                            <img src="./asset/amar.jpg" />
+                        </div>
+                    </div>
+                    <div class="rigth-content">
+                        <div class="head-name h-c">Amar</div>
+                        <div class="content-sec h-c">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab accusantium, nisi ad
+                                distinctio ut dolores minima. Libero nulla maiores odit praesentium dolore? Iste saepe
+                                aspernatur, porro accusamus voluptas eaque.
+                                Dolore, animi, voluptate dolorem voluptatum at, iusto minima necessitatibus dolor culpa
+                                deleniti porro architecto similique exercitationem repellendus beatae quae fugit. Quasi
+                                quam explicabo in earum id exercitationem distinctio iste veniam?
+                            </p>
+                        </div>
+                        <div class="util-box h-c">
+                            <div>
+                                <img class="icon-logo" src="https://img.icons8.com/m_outlined/512/github.png"
+                                    alt="git" />
+                            </div>
+                            <div>
+                                <img class="icon-logo"
+                                    src="https://thumbs.dreamstime.com/b/isolated-linkedin-logo-vector-illustration-icon-minsk-belarus-march-142909970.jpg"
+                                    alt="linkedIn" />
+                            </div>
+                            <div>
+                                <button class="btn">Resume</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
                 <div id="skills" class="section">Skills</div>
                 <div id="projects" class="section">Projects</div>
                 <div id="contact" class="section">Contact</div>
@@ -24,6 +69,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
+
 </html>
