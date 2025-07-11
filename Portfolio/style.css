@@ -141,4 +141,7 @@ img {
         font-size: 20px;
         width: 500px;
     }
+    .right-content {
+        gap: 15rem;
+    }
 }
