@@ -1,0 +1,7 @@
+body {
+    background-color: #ccc;
+}
+#form-box {
+    display: flex;
+    justify-content: center;
+}
