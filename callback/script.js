@@ -74,48 +74,48 @@
 
 
 
-let allNames = [];
+// let allNames = [];
 
-function verifyData(username) {
-    return new Promise ((res, rej) =>{
-        console.log("normalizeName : ",username)
-        setTimeout(()=>{
-            if(allNames.includes(username)){
-               rej({error:"username already taken"}) 
-            } else {
-                res({status:"success", response:"User verified sucessfully", username:username})
-            }
-        }, 2000)
-    })
-}
+// function verifyData(username) {
+//     return new Promise ((res, rej) =>{
+//         console.log("normalizeName : ",username)
+//         setTimeout(()=>{
+//             if(allNames.includes(username)){
+//                rej({error:"username already taken"}) 
+//             } else {
+//                 res({status:"success", response:"User verified sucessfully", username:username})
+//             }
+//         }, 2000)
+//     })
+// }
 
-function updateToDB(username){
-    return new Promise((res,rej)=>{
-        setTimeout(()=>{
-            if(allNames.length>=5){
-                rej({error:"DB limit reached"})
-            }else{
-                allNames.push(username)
-                res({status:"succes",
-                    response:"User added to DB",
-                    data:allNames
-                })
-            }
-        },2000)
-    })
-}
-function normalizeData(name){
-    return name.toLowerCase();
-}
-async function updateUserToDB(name) {
-    try{
-        let normalizedUsername = normalizeData();
-        let result = await verifyData(normalizedUsername);
-        console.log("verify",result)
-        let dbResponce = await updateToDB(result.username)
-        console.log("DB",dbResponce)
-    }catch(err){
-        console.log(err)
-    }
-}
-updateUserToDB("amar");
+// function updateToDB(username){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             if(allNames.length>=5){
+//                 rej({error:"DB limit reached"})
+//             }else{
+//                 allNames.push(username)
+//                 res({status:"succes",
+//                     response:"User added to DB",
+//                     data:allNames
+//                 })
+//             }
+//         },2000)
+//     })
+// }
+// function normalizeData(name){
+//     return name.toLowerCase();
+// }
+// async function updateUserToDB(name) {
+//     try{
+//         let normalizedUsername = normalizeData();
+//         let result = await verifyData(normalizedUsername);
+//         console.log("verify",result)
+//         let dbResponce = await updateToDB(result.username)
+//         console.log("DB",dbResponce)
+//     }catch(err){
+//         console.log(err)
+//     }
+// }
+// updateUserToDB("amar");
