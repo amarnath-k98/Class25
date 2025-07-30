@@ -20,7 +20,7 @@ function renderAllCard(countryArr){
 
 main.append(cardList);
 
-async function get(cardList) {
+async function get(){
     try {
         let res = await fetch("https://restcountries.com/v3.1/independent?status=true",{
             method:"GET"
@@ -31,6 +31,7 @@ async function get(cardList) {
         console.log(err)
     }
 }
+get();
 
 // fetch("https://restcountries.com/v3.1/independent?status=true",{
 //     method:"GET"
